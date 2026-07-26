@@ -1,9 +1,13 @@
-import StatsGrid from "@/components/StatsGrid";
+import StatsGrid from "@/components/admin/StatsGrid";
+import Charts from "@/components/admin/Charts";
+import QuickActions from "@/components/admin/QuickActions";
+import RecentActivity from "@/components/admin/RecentActivity";
 
 export default function AdminPage() {
   return (
-    <div>
-      <div className="mb-10">
+    <div className="space-y-8">
+
+      <div>
         <h1 className="text-4xl font-bold">
           Dashboard
         </h1>
@@ -14,6 +18,14 @@ export default function AdminPage() {
       </div>
 
       <StatsGrid />
+
+      <Charts />
+
+      <div className="grid gap-8 lg:grid-cols-2">
+        <QuickActions />
+        <RecentActivity />
+      </div>
+
     </div>
   );
 }

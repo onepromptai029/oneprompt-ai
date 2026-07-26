@@ -1,11 +1,11 @@
-import DashboardCard from "./DashboardCard";
-
 import {
   Users,
   IndianRupee,
   BrainCircuit,
   Activity,
 } from "lucide-react";
+
+import DashboardCard from "./DashboardCard";
 
 export default function StatsGrid() {
   return (
@@ -33,9 +33,9 @@ export default function StatsGrid() {
       />
 
       <DashboardCard
-        title="Active AI"
+        title="Active AI Models"
         value="12"
-        change="Running"
+        change="All Running"
         icon={<Activity size={30} />}
       />
 
